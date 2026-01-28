@@ -1,7 +1,7 @@
 function Navbar(){
     return(
         <nav>
-            <h2> Kishalan </h2>
+            <h2> Cholas destiny </h2>
             <button> Log-in </button>
         </nav>
     );
