@@ -9,7 +9,9 @@ import Footer from './footer'
 function App() {
   return (
     <>
-    <Course />
+    <Course name = "Full-Stack Development" price = "$499" />
+    <Course name = "Flutter" price = "$499" />
+    <Course name = "Python" price = "$499" />
     </>
   )
 }
