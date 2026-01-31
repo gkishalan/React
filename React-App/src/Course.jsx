@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 function Course(props){
 
     if(props.show == true){
@@ -17,6 +19,12 @@ function Course(props){
             </div>
         );
     }
+}
+
+Course.propTypes = {
+    name : PropTypes.string,
+    rate : PropTypes.number,
+    show : PropTypes.bool,
 }
 
 export default Course

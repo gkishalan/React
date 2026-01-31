@@ -13,7 +13,7 @@ function App() {
   return (
     <>
     <Course name = "HTML Full Course" price = "$499" image = {fullstack} rate = "5" show = {true} />
-    <Course name = "Flutter" price = "$499" image = {flutter} rate = "4" />
+    <Course name = "Flutter" price = "$499" image = {flutter} rate = "4" show = {true}/>
     <Course name = "Python" price = "$499" image = {python} rate = "5" show = {true}/>
     </>
   )
