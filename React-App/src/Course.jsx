@@ -1,16 +1,22 @@
-import fullstack from './assets/fulllstack.webp'
-
-const course1 = "HTML"
-
 function Course(props){
 
-    return(
+    if(props.show == true){
+            return(
         <div className = "card">
-            <img src = {fullstack} alt="" />
+            <img src = {props.image} alt="" />
             <h3>{props.name}</h3>
             <p> {props.price} </p>
+            <span> {props.rate}</span>
         </div>
     );
+    }
+    else {
+        return (
+            <div className = "card">
+                <h3>Course Unavailable</h3>
+            </div>
+        );
+    }
 }
 
 export default Course
