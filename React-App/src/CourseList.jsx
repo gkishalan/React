@@ -27,10 +27,11 @@ function CourseList(){
     ]
 
     courses.sort( (x,y) => y.price - x.price);
+    courses.sort((a,b) => b.rate - a.rate);
 
     const vfmCourses = courses.filter((course) => course.price < 200);
 
-    const coursesList = vfmCourses.map( 
+    const coursesList = courses.map( 
     (course , index) => 
     <Course key = {index}
     name = {course.name} 
